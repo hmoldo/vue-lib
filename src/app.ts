@@ -1,3 +1,5 @@
+import "./app.css";
+
 class BASE_APP {
   _start() {
     console.log("start");
