@@ -1,9 +1,9 @@
 {
-  "name": "vue-lib-test",
+  "name": "vue-lib",
   "main": "./dist/github-packages-ui-library.umd.js",
   "module": "./dist/github-packages-ui-library.es.js",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "files": [
     "dist"
