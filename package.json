@@ -1,8 +1,24 @@
 {
   "name": "vue-lib-test",
+  "main": "./dist/github-packages-ui-library.umd.js",
+  "module": "./dist/github-packages-ui-library.es.js",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmoldo/vue-lib.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/github-packages-ui-library.es.js",
+      "require": "./dist/github-packages-ui-library.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
@@ -12,10 +28,13 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@types/node": "^24.0.1",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/tsconfig": "^0.7.0",
+    "path": "^0.12.7",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
     "vue-tsc": "^2.2.8"
   }
 }
