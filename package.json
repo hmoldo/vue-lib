@@ -7,7 +7,6 @@
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/types/index.d.ts",
         "default": "./dist/github-packages-ui-library.es.js"
       },
       "require": {
@@ -23,7 +22,7 @@
   },
   "name": "vue-lib",
   "private": true,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "scripts": {
     "dev": "vite",
