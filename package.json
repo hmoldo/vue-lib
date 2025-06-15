@@ -6,7 +6,10 @@
   "module": "./dist/github-packages-ui-library.es.js",
   "exports": {
     ".": {
-      "import": "./dist/github-packages-ui-library.es.js",
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/github-packages-ui-library.es.js"
+      },
       "require": "./dist/github-packages-ui-library.umd.js"
     }
   },
@@ -17,7 +20,7 @@
   },
   "name": "vue-lib",
   "private": true,
-  "version": "0.0.15",
+  "version": "0.0.16",
   "type": "module",
   "scripts": {
     "dev": "vite",
