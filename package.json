@@ -1,24 +1,29 @@
 {
-  "name": "vue-lib",
-  "main": "./dist/github-packages-ui-library.umd.js",
-  "module": "./dist/github-packages-ui-library.es.js",
-  "private": true,
-  "version": "0.0.5",
-  "type": "module",
   "files": [
     "dist"
   ],
+  "main": "./dist/github-packages-ui-library.umd.js",
+  "module": "./dist/github-packages-ui-library.es.js",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/github-packages-ui-library.es.js"
+      },
+      "require": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/github-packages-ui-library.umd.js"
+      }
+    }
+  },
   "types": "./dist/types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hmoldo/vue-lib.git"
   },
-  "exports": {
-    ".": {
-      "import": "./dist/github-packages-ui-library.es.js",
-      "require": "./dist/github-packages-ui-library.umd.js"
-    }
-  },
+  "name": "vue-lib",
+  "private": true,
+  "version": "0.0.7",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
