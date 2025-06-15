@@ -1,4 +1,3 @@
-(function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode("#baseButton{padding:1rem 2rem;cursor:pointer;border:none;background-color:var(--cf32ecb4);font-size:var(--3fb37bcd)}div{position:relative}")),document.head.appendChild(e)}}catch(n){console.error("vite-plugin-css-injected-by-js",n)}})();
 import { defineComponent as n, useCssVars as c, computed as l, createElementBlock as r, openBlock as a, renderSlot as u } from "vue";
 const _ = { id: "baseButton" }, f = /* @__PURE__ */ n({
   __name: "BaseButton",
