@@ -12,9 +12,9 @@
       },
       "require": "./dist/github-packages-ui-library.umd.js"
     },
-    "./dist/index.css": {
-      "import": "./dist/index.css",
-      "require": "./dist/index.css"
+    "./dist/*.css": {
+      "import": "./dist/*.css",
+      "require": "./dist/*.css"
     }
   },
   "types": "./dist/types/index.d.ts",
@@ -24,7 +24,7 @@
   },
   "name": "vue-lib",
   "private": true,
-  "version": "0.0.22",
+  "version": "0.0.23",
   "type": "module",
   "scripts": {
     "dev": "vite",
